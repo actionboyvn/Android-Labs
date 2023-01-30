@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/center_frag">
+    <fragment
+        android:id="@+id/center_frag"
+        android:name="com.example.cwiczenie4.CentralFragment"
+        android:label="Center Fragment"
+        tools:layout="@layout/fragment_central" >
+    </fragment>
+    <fragment
+        android:id="@+id/left_frag"
+        android:name="com.example.cwiczenie4.LeftFragment"
+        android:label="Left Fragment"
+        tools:layout="@layout/fragment_left" >
+    </fragment>
+    <fragment
+        android:id="@+id/right_frag"
+        android:name="com.example.cwiczenie4.RightFragment"
+        android:label="Right Fragment"
+        tools:layout="@layout/fragment_right" >
+    </fragment>
+    <action
+        android:id="@+id/action_to_centralFragment"
+        app:destination="@id/center_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/center_frag"/>
+    <action
+        android:id="@+id/action_to_rightFragment"
+        app:destination="@id/right_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/center_frag"/>
+    <action
+        android:id="@+id/action_to_leftFragment"
+        app:destination="@id/left_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/center_frag"/>
+</navigation>
