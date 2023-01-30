@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cwiczenie2</string>
+    <string name="bn_right">Right</string>
+    <string name="bn_left">Left</string>
+    <string name="bn_center">Center</string>
+    <string name="result">Here will be result</string>
+    <string name="author">Van Hien Le</string>
+</resources>
