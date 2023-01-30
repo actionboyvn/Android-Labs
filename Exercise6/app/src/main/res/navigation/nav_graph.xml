@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/primary_frag">
+
+    <fragment
+        android:id="@+id/primary_frag"
+        android:name="com.example.cwiczenie5.PrimaryFragment"
+        android:label="fragment_primary"
+        tools:layout="@layout/fragment_primary" >
+    </fragment>
+    <fragment
+        android:id="@+id/list1_frag"
+        android:name="com.example.cwiczenie5.List1Fragment"
+        android:label="fragment_list1"
+        tools:layout="@layout/fragment_list1" >
+    </fragment>
+    <fragment
+        android:id="@+id/list2_frag"
+        android:name="com.example.cwiczenie5.List2Fragment"
+        android:label="fragment_list2"
+        tools:layout="@layout/fragment_list2" >
+    </fragment>
+    <fragment
+        android:id="@+id/swipe_frag"
+        android:name="com.example.cwiczenie5.SwipeFragment"
+        android:label="fragment_swipe"
+        tools:layout="@layout/fragment_swipe" >
+    </fragment>
+    <fragment
+        android:id="@+id/data_adding_frag"
+        android:name="com.example.cwiczenie5.DataAddingFragment"
+        android:label="fragment_data_adding"
+        tools:layout="@layout/fragment_data_adding" >
+    </fragment>
+    <fragment
+        android:id="@+id/details_frag"
+        android:name="com.example.cwiczenie5.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+    </fragment>
+    <action
+        android:id="@+id/action_to_list1Fragment"
+        app:destination="@id/list1_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/primary_frag"/>
+    <action
+        android:id="@+id/action_to_list2Fragment"
+        app:destination="@id/list2_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/primary_frag"/>
+    <action
+        android:id="@+id/action_to_swipeFragment"
+        app:destination="@id/swipe_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/primary_frag"/>
+    <action
+        android:id="@+id/action_to_primaryFragment"
+        app:destination="@id/primary_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/primary_frag"/>
+    <action
+        android:id="@+id/action_to_dataAddingFragment"
+        app:destination="@id/data_adding_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/list2_frag"/>
+    <action
+        android:id="@+id/action_to_detailsFragment"
+        app:destination="@id/details_frag"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/list2_frag"/>
+
+
+</navigation>
